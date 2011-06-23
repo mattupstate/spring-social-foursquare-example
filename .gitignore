@@ -4,7 +4,8 @@ build
 **/src/test/java/exploration
 .gradle
 spring-social-core/src/test/java/exploration
-**/.classpath
-**/.project
-**/.settings
+.classpath
+.project
+.settings
+target
 **/bin
