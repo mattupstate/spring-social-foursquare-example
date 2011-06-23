@@ -33,8 +33,8 @@ public class HomeController {
 	private final Foursquare foursquare;
 	
 	@Inject
-	public HomeController(Foursquare facebook) {
-		this.foursquare = facebook;
+	public HomeController(Foursquare foursquare) {
+		this.foursquare = foursquare;
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
