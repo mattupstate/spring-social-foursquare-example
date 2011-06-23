@@ -63,7 +63,7 @@ public final class UserInterceptor extends HandlerInterceptorAdapter {
 
 	private void handleSignOut(HttpServletRequest request, HttpServletResponse response) {
 		if (SecurityContext.userSignedIn() && request.getServletPath().startsWith("/signout")) {
-			connectionRepository.createConnectionRepository(SecurityContext.getCurrentUser().getId()).removeConnections("facebook");
+			connectionRepository.createConnectionRepository(SecurityContext.getCurrentUser().getId()).removeConnections("foursquare");
 			userCookieGenerator.removeCookie(response);
 			SecurityContext.remove();			
 		}

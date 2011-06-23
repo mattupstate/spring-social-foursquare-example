@@ -8,4 +8,4 @@ spring-social-core/src/test/java/exploration
 .project
 .settings
 target
-**/bin
+bin
