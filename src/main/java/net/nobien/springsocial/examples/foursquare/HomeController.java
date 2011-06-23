@@ -39,7 +39,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
-	    List<Venue> venues = foursquare.venueOperations().search(new VenueSearchParams().location(40.77, 73.98));
+	    List<Venue> venues = foursquare.venueOperations().search(new VenueSearchParams().location(40.73, -74.0));
 		model.addAttribute("venues", venues);
 		return "home";
 	}
